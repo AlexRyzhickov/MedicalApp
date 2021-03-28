@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "364458499614",
+    "project_id": "handbook-for-moms",
+    "storage_bucket": "handbook-for-moms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364458499614:android:f5b152b50d7cc28123d80f",
+        "android_client_info": {
+          "package_name": "com.atex.medicalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364458499614-bnn06u179epoe90r46abfqhkhgstojnc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDERnF4aYrqiYKz6J83BffIsSikY6049B8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364458499614-bnn06u179epoe90r46abfqhkhgstojnc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
