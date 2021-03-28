@@ -1,5 +1,8 @@
 package com.atex.medicalapp
 
+import android.content.ActivityNotFoundException
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.text.Html
 import android.view.View
@@ -86,6 +89,12 @@ class WelcomeFragment : Fragment(R.layout.welcome_fragment) {
         pushBtn.setOnClickListener {
             if (ratingBar.rating >= 4){
                 Toast.makeText(context,"Переходим в Google Play",Toast.LENGTH_SHORT).show()
+                val packageName = activity?.packageName
+                try {
+                    startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=$packageName")))
+                } catch (e: ActivityNotFoundException) {
+                    startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=$packageName")))
+                }
             }else{
                 Toast.makeText(context,"Спасибо за ваш отзыв",Toast.LENGTH_SHORT).show()
             }
