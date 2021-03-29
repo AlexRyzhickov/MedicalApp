@@ -51,7 +51,6 @@ class TopicsFragment : Fragment(R.layout.topics_fragment), TopicsAdapter.OnItemC
     }
 
     override fun onItemClick(data: List<String>, author: String, title: String) {
-        navigationInterface.showInterstitialAds()
         val action = TopicsFragmentDirections.actionTopicsFragmentToArticleFragment(
             data.toTypedArray(),
             author,
