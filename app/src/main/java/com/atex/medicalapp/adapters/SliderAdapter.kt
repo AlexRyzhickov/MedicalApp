@@ -16,17 +16,13 @@ class SliderAdapter(
 ) : PagerAdapter() {
 
     val slides_images = intArrayOf(
-        R.drawable.eat,
-        R.drawable.sleep
-    )
-
-    val slide_headings = arrayOf(
-        "EAT", "SLEEP"
+        R.drawable.img_mome,
+        R.drawable.img_mum2
     )
 
     val slide_descs = arrayOf(
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+        context?.getString(R.string.welcome_string_1),
+        context?.getString(R.string.welcome_string_2)
     )
 
     override fun getCount(): Int {
@@ -43,16 +39,13 @@ class SliderAdapter(
         val view: View = layoutInflater.inflate(R.layout.slide_layout, container, false)
 
         val slideImageView = view.findViewById<ImageView>(R.id.slideImage)
-        val slideHeading = view.findViewById<TextView>(R.id.slide_heading)
         val slideDescription = view.findViewById<TextView>(R.id.slide_desc)
 
         if (position==count-1){
             slideImageView.visibility = View.INVISIBLE
-            slideHeading.text = ""
             slideDescription.text = ""
         }else{
             slideImageView.setImageResource(slides_images[position])
-            slideHeading.text = slide_headings[position]
             slideDescription.setText(slide_descs.get(position))
         }
 

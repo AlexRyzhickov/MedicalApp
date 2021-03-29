@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Medical App</string>
+    <string name="app_name">Здоровье малыша</string>
+    <string name="interstitialAdsId">ca-app-pub-6652398559048364/3068214913</string>
+    <string name="bannerAdsId">ca-app-pub-6652398559048364/2876643227</string>
+    <string name="appAdsId">ca-app-pub-6652398559048364~8512113289</string>
+    <string name="welcome_string_1">Приветствуем вас!\n В нашем приложении вы найдёте ответы на самые популярные вопросы от известных и высококвалифицированных экспертов !</string>
+    <string name="welcome_string_2">Теперь вам не придётся терять время часами в поисках правильного ответа на все вопросы ! Мы поместили всё в одно приложение !</string>
 </resources>

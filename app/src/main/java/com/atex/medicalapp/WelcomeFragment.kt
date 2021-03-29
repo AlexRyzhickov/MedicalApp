@@ -64,7 +64,7 @@ class WelcomeFragment : Fragment(R.layout.welcome_fragment) {
                     mBackBtn.setText("Назад")
                     ratingBar.visibility = View.VISIBLE
                     mPushBtn.visibility = View.VISIBLE
-//                    mSlideViewPager.visibility = View.INVISIBLE
+                    rait_text.visibility = View.VISIBLE
                 } else {
                     mNextBtn.setEnabled(true)
                     mBackBtn.setEnabled(true)
@@ -73,7 +73,7 @@ class WelcomeFragment : Fragment(R.layout.welcome_fragment) {
                     mBackBtn.setText("Назад")
                     ratingBar.visibility = View.INVISIBLE
                     mPushBtn.visibility = View.INVISIBLE
-//                    mSlideViewPager.visibility = View.VISIBLE
+                    rait_text.visibility = View.INVISIBLE
                 }
             }
         })
