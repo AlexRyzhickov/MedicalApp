@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity(), NavigationInterface {
 
         sharedPref = getSharedPreferences(PREF_NAME, PRIVATE_MODE)
         if (sharedPref.getBoolean(PREF_NAME, false)) {
-            graph.startDestination = R.id.homeFragment
+            graph.startDestination = R.id.welcomeFragment
         } else {
             graph.startDestination = R.id.welcomeFragment
             val editor = sharedPref.edit()
